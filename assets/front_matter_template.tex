@@ -1,0 +1,65 @@
+% Force landing on a LEFT-facing (even) page
+\newcommand{\forceleftpage}{%
+  \clearpage
+  \ifodd\value{page}
+    \thispagestyle{empty}\hbox{}\newpage
+  \fi
+}
+
+\thispagestyle{empty}
+\begin{center}
+\vspace*{6cm}
+{\LARGE \textbf{$TITLE_UPPER$}}
+\end{center}
+\cleardoublepage
+
+\thispagestyle{empty}
+\begin{center}
+\vspace*{4cm}
+{\LARGE \textbf{$TITLE_UPPER$}}
+
+\vspace{0.5cm}
+
+{\large $SUBTITLE$}
+
+\vspace{3cm}
+
+{\normalsize $AUTHOR$}
+\end{center}
+\forceleftpage
+
+\thispagestyle{empty}
+\vspace*{5cm}
+
+\noindent Copyright \textcopyright\ $YEAR$ by $AUTHOR$
+
+\noindent All rights reserved.
+
+\vspace{0.5cm}
+
+\noindent No part of this publication may be reproduced, distributed, or transmitted in any form or by any means, including photocopying, recording, or other electronic or mechanical methods, without the prior written permission of the publisher, except in the case of brief quotations embodied in critical reviews and certain other noncommercial uses permitted by copyright law.
+
+\vspace{0.5cm}
+
+\noindent $COPYRIGHT_DISCLAIMER$
+
+\vspace{0.5cm}
+
+\noindent Published by $PUBLISHER$.
+
+\vspace{0.5cm}
+
+\noindent First edition, $YEAR$.
+
+\vspace{0.5cm}
+
+\noindent ISBN: $ISBN$
+
+\cleardoublepage
+
+\thispagestyle{empty}
+\vspace*{6cm}
+\begin{center}
+\textit{$DEDICATION$}
+\end{center}
+\cleardoublepage
